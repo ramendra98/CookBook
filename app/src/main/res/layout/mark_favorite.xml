@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:backgroundTint="#4CAF50"
+    android:layout_margin="5dp"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="My Favorites Recipes and Cuisine "
+    android:textSize="25sp"
+    android:gravity="center"
+    android:textColor="@color/colorAccent"
+    />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/markerecipe"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

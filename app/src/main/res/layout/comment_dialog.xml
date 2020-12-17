@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/comment"
+        android:drawableLeft="@drawable/comment"
+        android:padding="22dp"
+
+        android:text="Comment.."
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/textmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comment "
+        android:inputType="text"
+        android:maxLength="500"
+        android:maxLines="10" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#EDD2DDDB"
+
+                android:text="Cancel"
+
+                />
+
+            <Button
+                android:id="@+id/post"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#EDD2DDDB"
+                android:text="OK"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
